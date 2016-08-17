@@ -28,16 +28,6 @@ export default class Examples extends React.Component {
               Using React Component state
             </a>
           </li>
-          <li>
-            <a href={FlowRouter.path('simpleSchemaCrud.index')}>
-              Create, index and update using Simple Schema
-            </a>
-          </li>
-          <li>
-            <a href={FlowRouter.path('customField')}>
-              Custom fields
-            </a>
-          </li>
         </ul>
       </div>
     );

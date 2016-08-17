@@ -8,7 +8,7 @@ const defaultProps = {
 
 };
 
-export default class Links extends React.Component {
+class Links extends React.Component {
 
   constructor(props) {
     super(props);
@@ -20,9 +20,24 @@ export default class Links extends React.Component {
       <div>
         <h4>Github:</h4>
         <p>
-          <a style={styles.link} href='https://github.com/nicolaslopezj/simple-react-form'>Simple React Form</a>
-          <a style={styles.link} href='https://github.com/nicolaslopezj/simple-react-form-material-ui'>Material UI</a>
-          <a style={styles.link} href='https://github.com/nicolaslopezj/simple-react-form-examples'>Examples</a>
+          <a
+            style={styles.link}
+            href='https://github.com/nicolaslopezj/simple-react-form'
+          >
+            Simple React Form
+          </a>
+          <a
+            style={styles.link}
+            href='https://github.com/fermuch/simple-react-form-bootstrap'
+          >
+            Bootstrap Fields
+          </a>
+          <a
+            style={styles.link}
+            href='https://github.com/fermuch/simple-react-form-bootstrap-examples'
+          >
+            Examples
+          </a>
         </p>
       </div>
     );
@@ -38,3 +53,5 @@ const styles = {
 
 Links.propTypes = propTypes;
 Links.defaultProps = defaultProps;
+
+export default Links;

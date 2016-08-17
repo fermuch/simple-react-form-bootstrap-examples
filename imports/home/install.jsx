@@ -27,16 +27,16 @@ export default class Install extends React.Component {
         <pre>npm install --save simple-react-form</pre>
 
         <p>
-          If you use material-ui install that package too
+          If you use react-bootstrap install that package too
         </p>
 
-        <pre>npm install --save simple-react-form-material-ui</pre>
+        <pre>npm install --save simple-react-form-bootstrap</pre>
 
         <p>
           And register the material-ui components, just once in your app.
         </p>
 
-        <pre>import 'simple-react-form-material-ui'</pre>
+        <pre>import 'simple-react-form-bootstrap'</pre>
       </div>
     );
   }

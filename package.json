@@ -2,7 +2,8 @@
   "name": "example",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "lint": "eslint ./client ./imports --ext .js --ext .jsx --fix -c .eslintrc.json"
   },
   "dependencies": {
     "components": "^0.1.0",
@@ -27,7 +28,8 @@
   "license": "MIT",
   "description": "Example for Simple React Form (using Bootstrap)",
   "devDependencies": {
-    "eslint": "^3.3.1",
+    "babel-eslint": "^6.1.2",
+    "eslint": "^2.13.1",
     "eslint-plugin-react": "^6.1.1"
   }
 }

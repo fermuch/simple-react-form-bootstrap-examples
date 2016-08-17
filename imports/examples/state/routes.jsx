@@ -1,17 +1,17 @@
-import React from 'react'
-import {FlowRouter} from 'meteor/kadira:flow-router'
-import {mount} from 'react-mounter'
+import React from 'react';
+import {FlowRouter} from 'meteor/kadira:flow-router';
+import {mount} from 'react-mounter';
 
-import Layout from '../../layouts/small'
-import Index from './index'
+import Layout from '../../layouts/small';
+import Index from './index';
 
 FlowRouter.route('/state', {
   name: 'state',
-  action () {
+  action() {
     mount(Layout, {
-      content () {
-        return <Index />
+      content() {
+        return <Index />;
       }
-    })
+    });
   }
-})
+});

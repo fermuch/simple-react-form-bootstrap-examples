@@ -1,6 +1,5 @@
 import React from 'react';
 import {Form, Field} from 'simple-react-form';
-import ArrayComponent from 'simple-react-form-material-ui/lib/array';
 import moment from 'moment';
 import BackHome from '../../home/back-home';
 // import Text from 'simple-react-form-material-ui/lib/text'
@@ -8,12 +7,23 @@ import BackHome from '../../home/back-home';
 // import Textarea from 'simple-react-form-material-ui/lib/textarea'
 // import DatePicker from 'simple-react-form-material-ui/lib/date-picker'
 // import MultipleCheckbox from 'simple-react-form-material-ui/lib/multiple-checkbox'
+
+// import some basic react-bootstrap inputs
 import {
-  StringField
+  StringField,
+  TextField
 } from 'simple-react-form-bootstrap/lib/fields/string';
+import {
+  SelectField
+} from 'simple-react-form-bootstrap/lib/fields/select';
+
+import ArrayComponent from 'simple-react-form/lib/array';
+
+// import react-datetime input
 import {
   DatetimeField
 } from 'simple-react-form-bootstrap/lib/fields/datetime';
+// react-datetime needs to load it's own css
 import 'react-datetime/css/react-datetime.css';
 
 
@@ -63,6 +73,22 @@ export default class Index extends React.Component {
             timeFormat={false}
             dateFormat="LL"
           />
+          <Field
+            fieldName='bio'
+            label='Bio'
+            type={TextField}
+            rows={3}
+          />
+          <Field
+            fieldName='musicTastes'
+            label='Music Tastes'
+            type={SelectField}
+            options={this.getMusicTastesOptions()}
+          />
+          <Field fieldName='friends' label='Friends' type={ArrayComponent}>
+            <Field fieldName='firstName' label='First Name' type={StringField} />
+            <Field fieldName='lastName' label='Last Name' type={StringField} />
+          </Field>
           {/*
           <Field fieldName='firstName' label='First Name' type={Text}/>
           <Field fieldName='lastName' label='Last Name' type={Text}/>

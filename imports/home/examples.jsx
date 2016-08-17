@@ -1,22 +1,22 @@
-import React from 'react'
-import {FlowRouter} from 'meteor/kadira:flow-router'
+import React from 'react';
+import {FlowRouter} from 'meteor/kadira:flow-router';
 
 const propTypes = {
 
-}
+};
 
 const defaultProps = {
 
-}
+};
 
 export default class Examples extends React.Component {
 
-  constructor (props) {
-    super(props)
-    this.state = {}
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
-  render () {
+  render() {
     return (
       <div>
         <h2>
@@ -40,10 +40,10 @@ export default class Examples extends React.Component {
           </li>
         </ul>
       </div>
-    )
+    );
   }
 
 }
 
-Examples.propTypes = propTypes
-Examples.defaultProps = defaultProps
+Examples.propTypes = propTypes;
+Examples.defaultProps = defaultProps;

@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
 
 const propTypes = {
 
-}
+};
 
 const defaultProps = {
 
-}
+};
 
 export default class Links extends React.Component {
 
-  constructor (props) {
-    super(props)
-    this.state = {}
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
-  render () {
+  render() {
     return (
       <div>
         <h4>Github:</h4>
@@ -25,7 +25,7 @@ export default class Links extends React.Component {
           <a style={styles.link} href='https://github.com/nicolaslopezj/simple-react-form-examples'>Examples</a>
         </p>
       </div>
-    )
+    );
   }
 
 }
@@ -34,7 +34,7 @@ const styles = {
   link: {
     marginRight: 10
   }
-}
+};
 
-Links.propTypes = propTypes
-Links.defaultProps = defaultProps
+Links.propTypes = propTypes;
+Links.defaultProps = defaultProps;

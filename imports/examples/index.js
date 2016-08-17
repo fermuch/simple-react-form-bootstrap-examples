@@ -1,5 +1,5 @@
-import './simple-schema-crud/index'
+import './simple-schema-crud/index';
 
-import './state/routes'
+import './state/routes';
 
-import './custom-field/routes'
+import './custom-field/routes';

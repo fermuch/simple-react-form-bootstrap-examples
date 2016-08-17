@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
 
 const propTypes = {
 
-}
+};
 
 const defaultProps = {
 
-}
+};
 
 export default class Install extends React.Component {
 
-  constructor (props) {
-    super(props)
-    this.state = {}
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
-  render () {
+  render() {
     return (
       <div>
         <h3>Installation</h3>
@@ -38,10 +38,10 @@ export default class Install extends React.Component {
 
         <pre>import 'simple-react-form-material-ui'</pre>
       </div>
-    )
+    );
   }
 
 }
 
-Install.propTypes = propTypes
-Install.defaultProps = defaultProps
+Install.propTypes = propTypes;
+Install.defaultProps = defaultProps;

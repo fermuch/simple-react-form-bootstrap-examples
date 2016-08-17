@@ -1,13 +1,13 @@
-import React from 'react'
-import {Form} from 'simple-react-form'
-import RaisedButton from 'material-ui/RaisedButton'
+import React from 'react';
+import {Form} from 'simple-react-form';
+import RaisedButton from 'material-ui/RaisedButton';
 // import ArrayComponent from 'simple-react-form-material-ui/lib/array'
-import {FlowRouter} from 'meteor/kadira:flow-router'
+import {FlowRouter} from 'meteor/kadira:flow-router';
 
-import Posts from './posts'
+import Posts from './posts';
 
 export default class PostsCreate extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <h1>Create a post</h1>
@@ -21,6 +21,6 @@ export default class PostsCreate extends React.Component {
         <RaisedButton label='Cancel' onTouchTap={() => FlowRouter.go('simpleSchemaCrud.index')}/>
         <RaisedButton primary label='Create' onTouchTap={() => this.refs.form.submit()}/>
       </div>
-    )
+    );
   }
 }

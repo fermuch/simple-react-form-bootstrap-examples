@@ -1,13 +1,13 @@
-import {Meteor} from 'meteor/meteor'
-import moment from 'moment'
-import {SimpleSchema} from 'meteor/aldeed:simple-schema'
-import Text from 'simple-react-form-material-ui/lib/text'
-import Textarea from 'simple-react-form-material-ui/lib/textarea'
-import DatePicker from 'simple-react-form-material-ui/lib/date-picker'
-import ArrayComponent from 'simple-react-form-material-ui/lib/array'
-import ObjectComponent from 'simple-react-form-material-ui/lib/object'
+import {Meteor} from 'meteor/meteor';
+import moment from 'moment';
+import {SimpleSchema} from 'meteor/aldeed:simple-schema';
+import Text from 'simple-react-form-material-ui/lib/text';
+import Textarea from 'simple-react-form-material-ui/lib/textarea';
+import DatePicker from 'simple-react-form-material-ui/lib/date-picker';
+import ArrayComponent from 'simple-react-form-material-ui/lib/array';
+import ObjectComponent from 'simple-react-form-material-ui/lib/object';
 
-const Posts = new Meteor.Collection('posts')
+const Posts = new Meteor.Collection('posts');
 
 const author = new SimpleSchema({
   name: {
@@ -23,7 +23,7 @@ const author = new SimpleSchema({
       fieldType: 'number'
     }
   }
-})
+});
 
 Posts.attachSchema({
   title: {
@@ -48,7 +48,7 @@ Posts.attachSchema({
     }
   },
   authors: {
-    type: [author],
+    type: [ author ],
     srf: {
       type: ArrayComponent
     }
@@ -59,6 +59,6 @@ Posts.attachSchema({
       type: ObjectComponent
     }
   }
-})
+});
 
-export default Posts
+export default Posts;

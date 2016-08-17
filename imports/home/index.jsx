@@ -1,12 +1,12 @@
-import React from 'react'
-import Divider from 'material-ui/Divider'
+import React from 'react';
+import Divider from 'material-ui/Divider';
 
-import Install from './install'
-import Examples from './examples'
-import Links from './links'
+import Install from './install';
+import Examples from './examples';
+import Links from './links';
 
 export default class Home extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <h1>Simple React Form</h1>
@@ -28,6 +28,6 @@ export default class Home extends React.Component {
         <Divider />
         <Examples />
       </div>
-    )
+    );
   }
 }

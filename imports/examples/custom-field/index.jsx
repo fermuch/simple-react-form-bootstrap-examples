@@ -1,25 +1,25 @@
-import React from 'react'
-import {Form, Field} from 'simple-react-form'
-import SpotifySong from './spotify'
-import Country from './country'
-import BackHome from '../../home/back-home'
+import React from 'react';
+import {Form, Field} from 'simple-react-form';
+import SpotifySong from './spotify';
+import Country from './country';
+import BackHome from '../../home/back-home';
 
 const propTypes = {
 
-}
+};
 
 const defaultProps = {
 
-}
+};
 
 export default class Index extends React.Component {
 
-  constructor (props) {
-    super(props)
-    this.state = {}
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
-  render () {
+  render() {
     return (
       <div>
         <BackHome/>
@@ -36,10 +36,10 @@ export default class Index extends React.Component {
           {JSON.stringify(this.state, null, 2)}
         </pre>
       </div>
-    )
+    );
   }
 
 }
 
-Index.propTypes = propTypes
-Index.defaultProps = defaultProps
+Index.propTypes = propTypes;
+Index.defaultProps = defaultProps;

@@ -1,23 +1,23 @@
-import React from 'react'
-import {FlowRouter} from 'meteor/kadira:flow-router'
-import {mount} from 'react-mounter'
+import React from 'react';
+import {FlowRouter} from 'meteor/kadira:flow-router';
+import {mount} from 'react-mounter';
 
 /**
  * Register the fields
  */
-import './spotify'
-import './country'
+import './spotify';
+import './country';
 
-import Layout from '../../layouts/small'
-import Index from './index'
+import Layout from '../../layouts/small';
+import Index from './index';
 
 FlowRouter.route('/custom-field', {
   name: 'customField',
-  action () {
+  action() {
     mount(Layout, {
-      content () {
-        return <Index />
+      content() {
+        return <Index />;
       }
-    })
+    });
   }
-})
+});

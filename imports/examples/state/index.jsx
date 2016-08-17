@@ -9,9 +9,12 @@ import BackHome from '../../home/back-home';
 // import DatePicker from 'simple-react-form-material-ui/lib/date-picker'
 // import MultipleCheckbox from 'simple-react-form-material-ui/lib/multiple-checkbox'
 import {
-  StringField,
-  DateField
+  StringField
 } from 'simple-react-form-bootstrap/lib/fields/string';
+import {
+  DatetimeField
+} from 'simple-react-form-bootstrap/lib/fields/datetime';
+import 'react-datetime/css/react-datetime.css';
 
 
 const propTypes = {
@@ -56,8 +59,9 @@ export default class Index extends React.Component {
           <Field
             fieldName='birthday'
             label='Birthday'
-            type={DateField}
-            formatDate={(date) => moment(date).format('LL')}
+            type={DatetimeField}
+            timeFormat={false}
+            dateFormat="LL"
           />
           {/*
           <Field fieldName='firstName' label='First Name' type={Text}/>

@@ -26,7 +26,7 @@
   "main": "index.js",
   "author": "Fernando Mumbach <fermuch@cryptolab.net>",
   "license": "MIT",
-  "description": "Example for Simple React Form (using Bootstrap)",
+  "description": "Examples for Simple React Form (using Bootstrap)",
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^2.13.1",

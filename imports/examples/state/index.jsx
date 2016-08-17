@@ -17,6 +17,7 @@ import {
   SelectField
 } from 'simple-react-form-bootstrap/lib/fields/select';
 
+// import the default Array component from simple-react-form
 import ArrayComponent from 'simple-react-form/lib/array';
 
 // import react-datetime input
@@ -89,18 +90,6 @@ export default class Index extends React.Component {
             <Field fieldName='firstName' label='First Name' type={StringField} />
             <Field fieldName='lastName' label='Last Name' type={StringField} />
           </Field>
-          {/*
-          <Field fieldName='firstName' label='First Name' type={Text}/>
-          <Field fieldName='lastName' label='Last Name' type={Text}/>
-          <Field fieldName='birthday' label='Birthday' type={DatePicker} formatDate={(date) => moment(date).format('LL')}/>
-          <Field fieldName='bio' label='Bio' type={Textarea} rows={3}/>
-          <Field fieldName='musicTastes' label='Music Tastes' type={MultipleCheckbox} options={this.getMusicTastesOptions()}/>
-          <Field fieldName='friends' label='Friends' type={ArrayComponent}>
-            <Field fieldName='firstName' label='First Name' type='text'/>
-            <Field fieldName='lastName' label='Last Name' type='text'/>
-            <Field fieldName='isBestFriend' label='Is Best Friend' type={Toggle} style={{marginTop: 10, marginBottom: 10}}/>
-          </Field>
-          */}
         </Form>
         <br/>
         <p>
